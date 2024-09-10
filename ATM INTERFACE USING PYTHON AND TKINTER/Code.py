@@ -65,7 +65,8 @@ def show_frame():
     global password
     global userindex
     pin_no=frame1_entry.get()
-for i in password:
+
+    for i in password:
        if pin_no==i:
           show_frame1(frame2)
           frame2.grid(row=0, rowspan=4, column=1, columnspan=2, sticky='nsew')
@@ -83,7 +84,7 @@ def cancel():
     operator = ""
     InputText.set("")
     show_frame1(frame1)
-	frame1.grid(row=0, rowspan=4, column=1, columnspan=2, sticky='nsew')
+    frame1.grid(row=0, rowspan=4, column=1, columnspan=2, sticky='nsew')
     button_enter.config(command=show_frame)
 #******************clear *******************#
 
